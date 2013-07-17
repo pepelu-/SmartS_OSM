@@ -90,7 +90,7 @@ L.Map.SelectMarkers = L.Handler.extend({
 		    layerPoint = map.mouseEventToLayerPoint(e);
 
 		if (this._startLayerPoint.equals(layerPoint)) { return; }
-
+/* Seleccion con casilla codigo
 		var bounds = new L.LatLngBounds(
 		        map.layerPointToLatLng(this._startLayerPoint),
 		        map.layerPointToLatLng(layerPoint));
@@ -111,6 +111,16 @@ L.Map.SelectMarkers = L.Handler.extend({
 		//alert(selected.join('\n'))
 		document.getElementById('onscreen').innerHTML = selected.join('\n');
 	},
+*/
+
+// Seleccion multiple codigo
+		var selected = new Array();
+		var selNode =
+		var t = 0;
+		
+		for (var i = 0, i < addressPoints.length; i++) {
+			if ()
+
 
 	_onKeyDown: function (e) {
 		if (e.keyCode === 27) {
